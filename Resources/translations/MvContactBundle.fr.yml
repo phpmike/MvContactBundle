@@ -1,0 +1,24 @@
+form:
+  contact:
+    nom:      Votre nom
+    email:    Votre email
+    sujet:    Sujet de votre message
+    message:  Votre message
+    send:     Envoyer...
+    required: Champ obligatoire pour la soumission du formulaire.
+    success: |
+              Votre message a bien été envoyé.
+
+              Nous mettons tout en oeuvre pour le traiter dans les plus brefs délais.
+
+              Merci de votre attention..
+              
+    flash:
+      success:  Le message a bien été envoyé, merci.
+      failed:   "Erreur : Il y a des erreurs dans votre formulaire."
+      
+mail:
+  nom:      "Nom :"
+  email:    "Email :"
+  message:  "Message :"
+  sujet:    "Contact : %sujet%"

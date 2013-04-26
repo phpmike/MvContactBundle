@@ -1,0 +1,22 @@
+form:
+  contact:
+    nom:      Your name
+    email:    Your email
+    sujet:    Subject
+    message:  Message
+    send:     Send...
+    required: Required field
+    success: |
+              Your contact enquiry was successfully sent.
+
+              Thank you.
+    
+    flash:
+      success:  Your contact enquiry was successfully sent. Thank you!
+      failed:   "Failed: There is some errors in your form."
+      
+mail:
+  nom:      "Name:"
+  email:    "Email:"
+  message:  "Message:"
+  sujet:    "Contact: %sujet%"

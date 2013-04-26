@@ -1,0 +1,18 @@
+{% extends 'MvContactBundle::layout.html.twig' %}
+
+{% block mvcontact_content %}
+    <div id="mvcontact_form" class="mvcontact_content">
+        <form action="{{ path('mvcontact_send') }}" name="contact" method="post">
+          <fieldset>
+          {{ form_rest(form) }}
+          <div>
+            <label> </label>
+            <input type="submit" name="do" value="{{ 'form.contact.send'|trans({}, 'MvContactBundle') }}" />
+          </div>
+          </fieldset>
+        </form>
+        <p class="mention">
+          <span class="flag_required">*</span> {{ 'form.contact.required'|trans({}, 'MvContactBundle') }}
+        </p>
+    </div>
+{% endblock %}

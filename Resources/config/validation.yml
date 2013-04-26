@@ -1,0 +1,9 @@
+Mv\ContactBundle\Entity\Contact:
+  properties:
+    nom:
+      - NotBlank: ~
+    email:
+      - NotBlank: ~
+      - Email:    ~
+    message:
+      - NotBlank: ~

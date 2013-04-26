@@ -1,0 +1,23 @@
+div#mvcontact_form form fieldset label {
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+}
+div#mvcontact_form form fieldset{
+    padding: 20px 10px;
+}
+div#mvcontact_form form fieldset,
+div#mvcontact_form form fieldset input {
+    border: 1px solid black;
+}
+div#mvcontact_form form fieldset input#contact_nom{
+    width: 180px;
+}
+div#mvcontact_form form fieldset input#contact_sujet,
+div#mvcontact_form form fieldset input#contact_email{
+    width: 280px;
+}
+div#mvcontact_form form fieldset textarea#contact_message{
+    width: 580px;
+    height: 160px;
+}

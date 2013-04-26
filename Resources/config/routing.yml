@@ -1,0 +1,14 @@
+mvcontact:
+  defaults:     { _controller: MvContactBundle:Contact:index }
+  pattern:      "/contact.html"
+  requirements: { _method: GET }
+  
+mvcontact_send:
+  defaults:     { _controller: MvContactBundle:Contact:send }
+  pattern:      "/contact-send.html"
+  requirements: { _method: POST }
+  
+mvcontact_success:
+  defaults:     { _controller: MvContactBundle:Contact:success }
+  pattern:      "/contact-success.html"
+  requirements: { _method: GET }
