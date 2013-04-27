@@ -1,5 +1,26 @@
 {% extends 'MvContactBundle::layout.html.twig' %}
 
+{% use 'form_div_layout.html.twig' with form_label as base_form_label %}
+
+{% form_theme form _self %}
+
+{% block form_label %}
+{% spaceless %}
+    {% if label is not sameas(false) %}
+        {% if not compound %}
+            {% set label_attr = label_attr|merge({'for': id}) %}
+        {% endif %}
+        {% if required %}
+            {% set label_attr = label_attr|merge({'class': (label_attr.class|default('') ~ ' required')|trim}) %}
+        {% endif %}
+        {% if label is empty %}
+            {% set label = name|humanize %}
+        {% endif %}
+        <label{% for attrname, attrvalue in label_attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ label|trans({}, translation_domain) }}{% if required %} <span class="flag_required">*</span>{% endif %}</label>
+    {% endif %}
+{% endspaceless %}
+{% endblock %}
+
 {% block mvcontact_content %}
     <div id="mvcontact_form" class="mvcontact_content">
         {% if block('mvcontact_header') %}
