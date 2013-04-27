@@ -1,0 +1,33 @@
+{
+    "name": "mv/mv-contact-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Form contact Bundle",
+    "keywords": ["form contact"],
+    "homepage": "https://github.com/phpmike/MvContactBundle",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Michaël VEROUX",
+            "homepage": "https://github.com/phpmike"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">=2.2@stable",
+        "symfony/swiftmailer-bundle": "2.2.*",
+        "swiftmailer/swiftmailer": ">=4.2.0,<4.3-dev",
+        "symfony/swiftmailer-bridge": ">=2.1.0,<2.3-dev"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.2.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Mv\\ContactBundle": ""
+        }
+    },
+    "target-dir" : "Mv/ContactBundle"
+}
