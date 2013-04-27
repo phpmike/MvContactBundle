@@ -2,6 +2,9 @@
 
 {% block mvcontact_content %}
     <div id="mvcontact_form" class="mvcontact_content">
+        {% if block('mvcontact_header') %}
+            {{ block('mvcontact_header') }}
+        {% endif %}
         <form action="{{ path('mvcontact_send') }}" name="contact" method="post">
           <fieldset>
           {{ form_rest(form) }}
@@ -14,5 +17,8 @@
         <p class="mention">
           <span class="flag_required">*</span> {{ 'form.contact.required'|trans({}, 'MvContactBundle') }}
         </p>
+        {% if block('mvcontact_footer') %}
+            {{ block('mvcontact_footer') }}
+        {% endif %}
     </div>
 {% endblock %}
