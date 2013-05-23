@@ -30,6 +30,12 @@ You need have installed Symfony2 2.2 with Composer or have a composer.json file
     mv_contact:
         resource: "@MvContactBundle/Resources/config/routing.yml"
 
+for translated websites, add:
+
+        prefix: /{_locale}
+        defaults:
+            _locale: en
+
 ###5)  Eventually override layout.html.twig
 
 Create `app/Resources/MvContactBundle/views/layout.html.twig`
