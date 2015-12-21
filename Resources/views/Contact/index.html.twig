@@ -26,15 +26,7 @@
         {% if block('mvcontact_header') %}
             {{ block('mvcontact_header') }}
         {% endif %}
-        <form action="{{ path('mvcontact_send') }}" name="contact" method="post">
-          <fieldset>
-          {{ form_rest(form) }}
-          <div>
-            <label> </label>
-            <input type="submit" name="do" value="{{ 'form.contact.send'|trans({}, 'MvContactBundle') }}" />
-          </div>
-          </fieldset>
-        </form>
+          {{ form(form) }}
         <p class="mention">
           <span class="flag_required">*</span> {{ 'form.contact.required'|trans({}, 'MvContactBundle') }}
         </p>

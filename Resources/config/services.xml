@@ -6,11 +6,11 @@
 
     <parameters>
         <parameter key="mvcontact.type.class">Mv\ContactBundle\Form\ContactType</parameter>
-        <parameter key="mvcontact.entity.class">Mv\ContactBundle\Entity\Contact</parameter>
     </parameters>
 
     <services>
-        <service id="mvcontact.type" class="%mvcontact.type.class%" />
-        <service id="mvcontact.entity" class="%mvcontact.entity.class%" />
+        <service id="mvcontact.type" class="%mvcontact.type.class%">
+            <tag name="form.type" alias="mv_contact" />
+        </service>
     </services>
 </container>

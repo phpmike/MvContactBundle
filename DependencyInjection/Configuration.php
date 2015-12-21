@@ -39,7 +39,7 @@ class Configuration implements ConfigurationInterface
                     ->info('Mail where send blind copie messages')
                 ->end()
             ->end()
-        ;        
+        ;
 
         return $treeBuilder;
     }

@@ -24,11 +24,11 @@ class MvContactExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-        
-        $container->setParameter('mv_contact.mail_from', $config['mail_from']);  
+
+        $container->setParameter('mv_contact.mail_from', $config['mail_from']);
         $container->setParameter('mv_contact.mail_to', $config['mail_to']);
-        
-        $container->setParameter('mv_contact.mail_cc', isset($config['mail_cc']) ? $config['mail_cc'] : false );
-        $container->setParameter('mv_contact.mail_bcc', isset($config['mail_bcc']) ? $config['mail_bcc'] : false );
+
+        $container->setParameter('mv_contact.mail_cc', isset($config['mail_cc']) ? $config['mail_cc'] : false);
+        $container->setParameter('mv_contact.mail_bcc', isset($config['mail_bcc']) ? $config['mail_bcc'] : false);
     }
 }

@@ -5,6 +5,7 @@ form:
     sujet:    Subject
     message:  Message
     send:     Send...
+    cancel:   Cancel
     required: Required field
     success: |
               Your contact enquiry was successfully sent.

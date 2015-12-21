@@ -5,6 +5,7 @@ form:
     sujet:    Sujet de votre message
     message:  Votre message
     send:     Envoyer...
+    cancel:   Effacer
     required: Champ obligatoire pour la soumission du formulaire.
     success: |
               Votre message a bien été envoyé.

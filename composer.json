@@ -13,13 +13,13 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": ">=2.2@stable",
+        "symfony/symfony": ">=2.2@stable,<2.7",
         "symfony/swiftmailer-bundle": "~2.2"
     },
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
-            "dev-master": "2.2.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     },
     "autoload": {
